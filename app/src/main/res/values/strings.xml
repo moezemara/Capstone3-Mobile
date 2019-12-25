@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Medical Assistant</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_diagnosis">DiagnosisActivity</string>
+
+    <string name="Agreement">
+        \n\tThis product uses publicly available data from Infermedica - Artificial Intelligence in Medical Diagnosis.\n\n
+
+        \tTHIS TOOL DOES NOT PROVIDE MEDICAL ADVICE It is intended for informational purposes only.
+        It is not a substitute for professional medical advice, diagnosis or treatment.
+        Never ignore professional medical advice in seeking treatment because of something you have read on this App.
+        If you think you may have a medical emergency, immediately visit your doctor.
+    </string>
+    <string name="brief">I understand its bad to be ill. Never mind I will help your diagnosis easier.
+        \n\nHelp me out knowing you better. \nTell me something about you.</string>
+    <string name="title_activity_symptoms">SymptomsActivity</string>
+    <string name="symptom_summary">We are just one more step away from your diagnosis results. Tell me whats wrong with you.
+        \nSearch for the symptoms and add it to the list.</string>
+    <string name="title_activity_result">ResultActivity</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bishwajit.medicalassistant.DiagnosisActivity"
+    tools:showIn="@layout/activity_diagnosis">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brief"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/boyButton"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/boy"
+        android:scaleType="centerCrop"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/girlButton"
+        android:layout_alignTop="@+id/boyButton"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/girl"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" I&apos;m a girl "
+        android:id="@+id/girl"
+        android:layout_below="@+id/girlButton"
+        android:layout_alignLeft="@+id/girlButton"
+        android:layout_alignStart="@+id/girlButton"
+        android:background="#1DE9B6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" I&apos;m a boy "
+        android:id="@+id/boy"
+        android:layout_alignTop="@+id/girl"
+        android:layout_alignLeft="@+id/boyButton"
+        android:layout_alignStart="@+id/boyButton"
+        android:background="#1DE9B6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="and I am "
+        android:id="@+id/textView4"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/boy"
+        android:layout_alignLeft="@+id/boy"
+        android:layout_alignStart="@+id/boy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  years old"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/age"
+        android:layout_toEndOf="@+id/age" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/age"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+</RelativeLayout>
